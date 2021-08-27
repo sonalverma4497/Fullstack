@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About div tag</title>
+    <style>
+        *{padding: 0 ;margin: 0;box-sizing: border-box;}
+        #container
+        {
+            display: inline-flex;
+        }
+        .box 
+        {
+          width: 300px ;
+          height: 400px;
+          overflow: hidden;
+          border: 2px solid black;
+          margin-bottom: 10px;
+          text-align: justify;
+          padding: 20px;
+          margin-right: 20px;
+        }
+        #box1
+        {
+            background-color: rgb(224, 183, 129);
+        }
+
+        #box2
+        {
+            background-color: rgb(222, 184, 135);
+        }
+
+        #box3
+        {
+            background-color: rgb(222, 184, 135);
+        }
+
+        #box4
+        {
+            background-color: rgb(222, 184, 135);
+        }
+
+        .box img
+        {
+            width: 100% ;
+            height: 150%;
+            border-radius: 20px;
+        }
+        .box h2{
+            text-align: center;
+            margin: 10px;
+        }
+        .mybutton
+        {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none ;
+            color: white ;
+            font-family: arial;
+            background-color: rgb(221, 160, 74);
+            padding: 10px 20px;
+            border-radius: 20px;
+
+        }
+        .mybutton:hover
+        {
+            background-color: brown;
+        }
+    
+        
+    </style>
+</head>
+<body style="background: rgb(235, 217, 170);">
+    <h1>Practical 6 : CREATE FOLLOWING LAYOUT USING CSS LAYOUT PROPERTIES</h1><br>
+    <br>
+    <br>
+    <div id="container">
+    <div class="box" id="box1">
+        <div class="image-heading">
+           <img src="../Images/bookimage.jpg" alt=""> 
+        </div> 
+    <h2>Introduction to HTML</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ullam, cum minima exercitationem delectus quisquam saepe corrupti reprehenderit optio sapiente esse numquam aliquam dolore ea accusantium impedit, totam vitae deserunt architecto! </p>
+    <div class="image" style="text-align: center;" >
+    <a href="./htmlpractical5.html" class="mybutton">Read More</a>
+    </div>
+    </div>
+    <div class="box" id="box2">
+        <div class="image-heading">
+            <img src="../Images/csspractical5.jpg" alt="">
+        </div>
+        <h2>Introduction to CSS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ullam, cum minima exercitationem delectus quisquam saepe corrupti reprehenderit optio sapiente esse numquam aliquam dolore ea accusantium impedit, totam vitae deserunt architecto! </p>
+        <div class="image" style="text-align: center;">
+        <a href="./csspractical5.html" class="mybutton">Read More</a>
+        </div>
+        </div>
+        <div class="box" id="box3">
+            <div class="image-heading">
+                <img src="../Images/jqueryimage.jpg" alt="">
+            </div>
+            <h2>Introduction to JQuery</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ullam, cum minima exercitationem delectus quisquam saepe corrupti reprehenderit optio sapiente esse numquam aliquam dolore ea accusantium impedit </p>
+            <div class="image" style="text-align: center;">
+            <a href="./phppractical5.html" class="mybutton">Read More</a>
+            </div>
+            </div>
+            <div class="box" id="box4">
+                <div class="image-heading">
+                    <img src="../Images/bootstrapimage.jpg" alt="">
+                </div>
+                <h2>Introduction to Bootstrap</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ullam, cum minima exercitationem delectus quisquam saepe corrupti reprehenderit optio sapiente esse numquam aliquam dolore ea accusantium impedit, totam vitae deserunt architecto! </p>
+                <div class="image" style="text-align: center;">
+                <a href="./sqlpractical5.html" class="mybutton">Read More</a>
+                </div>
+                </div>
+     </div>
+</body>
+</html>
