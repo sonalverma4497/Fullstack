@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Elements</title>
+    <style>
+        input
+        {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <form action="data.html" method="GET">
+        <label for="text-1">Username</label>
+        <input type="text" name="user"  /><br /><br>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pwd" pattern = "[A-Z][A-Za-z0-9]*[0-9][a-zA-Z0-9]*" 
+        title="A valid password must contain alphabets and numbers. First character should be capital and must contain a number and no special characters"
+        required /><br><br>
+        <input type="submit" value="submit" />
+
+    </form>
+</body>
+</html>
