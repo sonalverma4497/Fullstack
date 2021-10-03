@@ -23,48 +23,62 @@
     <title>Responsive Footer</title>
 </head>
 <style>
-.footer{
-    width: 100%;
-    height: 70px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.section2{
-    width: 100%;
-    height: 400px;
-    background-color: rgb(77, 72, 72);
-    
-}
-.section3{
-    width: 100%;
-    height: 150px ;
-    background-color:rgb(77, 72, 72);
-    
-}
-.section4{
-    width: 100%;
-    height: 70px;
-    background-color: black;
-    text-align: center;
-}
+    .main-content{
+        background-color:white;
+        text-align: center;
+        width: 100%;
+        height: 80px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        justify-content: center;
+        display: flex;
+    }
+    .footer{
+        background-color: black;
+        width: 100%;
+    }
+    .section-1{
+        background-color:black;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 10px;
+    }
+    .about{
+        color: black;
+        width: 40%;
+    }
+    .about h2{
+        text-decoration: blanchedalmond;
+        font-size: 18px;
+
+    }
 </style>
 <body>
-    <div class="footer">
+    <section class="main-content">
         <h1>Content Area</h1>
-    </div>
-    <div class="section2">
-        <div id="container">
-            <div class="box" id="box1">
-                <h2>FOOTER CONTENT</h2>
-            </div>
+    </section>
+    <footer>
+        <section class="section-1">
+            <section class="about">
+                <h2>ABOUT</h2>
+                <P>here we can write any text</p>
+            </section>
 
-        </div>
-    </div>
-    <div class="section3">
-    </div>
-    <div class="section4">
-    <a href="javapoint.com"><h3>&copy 2020 Copyright:MDBootstrap.com</a></h3>
-    </div>
+            <section class="link">
+                <h2>CATEGORIES</h2>
+                <ul>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">UI Design</a></li>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">BootStrap</a></li>
+                </ul>
+
+            </section>
+
+        </section>
+    </footer>
 </body>
 </html>
