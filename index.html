@@ -10,6 +10,39 @@
     />
     <title>Document</title>
     <style>
+        .wholecontent{
+            display: none;
+        }
+        .loader{
+            margin: auto;
+            height: 100vh;
+            width: 100px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .circle{
+            border: solid purple 10px;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            border-top: plum solid 10px;
+            animation: load 1s linear infinite;
+        }
+        @keyframes load {
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(120deg);
+            }
+            50%{
+                transform: rotate(240deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
       body {
         padding: 0;
         margin: 0;
@@ -87,6 +120,23 @@
       width: 100%;
     "
   >
+  <div class="loader" id='loader'>
+    <div class="circle"></div>
+</div>
+<div class="wholecontent" id='wholecontent'>
+<header>
+    <div style="display: flex;">
+        <h1 id="mainHead"><a href="https://github.com/sonalverma4497/Fullstack" target="_blank" style="margin-left:0px ;">FullStack</a></h1>
+        
+    </div>
+    <img id="flstk" src="./Images/fullstackimage.jpg" alt="" >       
+</header>
+<div class="container">
+    <div id="about"><h1>About this course</h1>
+    <p >Front-end web development is everything involved in progamming the user interface of web application. Typically it referes to the Hypertext Markup Language(HTML), Cascading Style Sheets(CSS) and JavaScript portion of web site production as opposed to the database or server-side programming .It encompasses everything from building a simple page of HTML text to creating comlpex, responsive HTML5 website designed to be accessed via various different browsers, devices and screen sizes.<p>
+    </div>
+   
+
     <table width="1400px" align ="center">
       <!-- <caption>
         List
@@ -261,7 +311,37 @@
             <i title="Delete" class="fa fa-trash-o"></i>
           </td>
         </tr>
+        <tr>
+            <td>13</td>
+            <td>Create a Custom Price Table Template.</td>
+            <td><a href="./Pages/practical13.html">Practical-13</a></td>
+            <td>Checked</td>
+            <td>
+              <i title="Edit" class="fa fa-pencil-square-o"></i>
+              <i title="Delete" class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Create a Counter.</td>
+            <td><a href="./Pages/practical14counter.html">Practical-14</a></td>
+            <td>Checked</td>
+            <td>
+              <i title="Edit" class="fa fa-pencil-square-o"></i>
+              <i title="Delete" class="fa fa-trash-o"></i>
+            </td>
+          </tr>
       </tbody>
     </table>
+</div>
   </body>
+  <script>
+    var con = document.getElementById('wholecontent')
+    var load = document.getElementById('loader')
+    setTimeout(() => {
+        load.style.display='none'
+        con.style.display = 'block'
+
+    }, 4000);
+</script>
 </html>
